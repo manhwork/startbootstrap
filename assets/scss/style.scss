@@ -1,0 +1,92 @@
+@use "base" as *;
+// Header
+.header {
+    .header-start {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        .drop {
+            padding: 0.25rem 0.75rem;
+            cursor: pointer;
+            border-radius: 0.5rem;
+            font-size: 1.25rem;
+            border: none;
+            border: 1px $color-text solid;
+            line-height: 1;
+            background-color: white;
+        }
+        .header-logo {
+            font-weight: bold;
+            font-size: 20px;
+            color: $color-primary;
+        }
+    }
+
+    .header-menu {
+        padding: 0.5rem 0;
+        width: 100%;
+
+        .menu-item {
+            padding: 0.5rem 0;
+        }
+    }
+}
+// End Header
+
+// Section-2
+.section-2 {
+    padding: 4rem 0;
+
+    .content {
+        text-align: center;
+        width: 100%;
+        .inner-badge {
+            padding: 0.35rem 0.65rem;
+            font-weight: 700;
+            font-size: 0.75rem;
+            border-radius: 0.375em;
+            white-space: nowrap;
+            background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+            margin-bottom: 24px;
+            .text-uppercase {
+                color: white;
+                font-size: 12px;
+            }
+        }
+        .fw-light {
+            color: $color-text-2;
+            font-weight: 200;
+            font-size: calc(1.3rem + 0.6vw);
+        }
+
+        .online-growth {
+            font-weight: bolder;
+            font-size: calc(1.525rem + 3.3vw);
+            line-height: 1.2;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 3rem;
+            .text-gradient {
+                background: -webkit-linear-gradient(
+                    315deg,
+                    #1e30f3 0%,
+                    #e21e80 100%
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        .inner-btn {
+            display: flex;
+            flex-direction: column;
+
+            .ps-fix {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+// Section-2
