@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap");
 * {
   font-family: "Plus Jakarta Sans", serif;
   font-optical-sizing: auto;
@@ -20,12 +21,17 @@ a {
 
 .container {
   width: 100%;
-  padding: 0 3rem;
+  padding: 0 1rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
 }
 
+@media (min-width: 576px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -45,10 +51,6 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-}
-
-.py-1 {
-  padding: 1rem 0;
 }
 
 .btn {
@@ -76,6 +78,14 @@ a {
 .btn-outline {
   background-color: transparent;
   color: #212529;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
 }
 
 .header .header-start {
@@ -113,6 +123,7 @@ a {
 .section-2 .content {
   text-align: center;
   width: 100%;
+  padding: 0 24px;
 }
 .section-2 .content .inner-badge {
   padding: 0.35rem 0.65rem;
@@ -152,6 +163,43 @@ a {
 .section-2 .content .inner-btn .ps-fix {
   font-size: 1rem;
   font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .header-logo {
+    font-size: 18px;
+  }
+  .online-growth {
+    font-size: 2rem;
+  }
+  .inner-btn {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  .header-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .header-menu.active {
+    display: flex;
+  }
+  .inner-btn {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

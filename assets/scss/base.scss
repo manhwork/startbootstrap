@@ -7,6 +7,17 @@ $color-text: rgb(0 0 0 / 55%);
 $color-text-2: #6c757d;
 $font-family: "Plus Jakarta Sans", serif;
 
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap");
+
+// Biến màu sắc
+$color-primary: rgb(30 48 243);
+$color-second: #e21e80;
+$color-btn: #212529;
+$color-text: rgba(0, 0, 0, 0.55);
+$color-text-2: #6c757d;
+$font-family: "Plus Jakarta Sans", serif;
+
+// Thiết lập mặc định
 * {
     font-family: $font-family;
     font-optical-sizing: auto;
@@ -26,29 +37,34 @@ a {
     text-decoration: none;
 }
 
+// Base Container (Mobile First)
 .container {
     width: 100%;
-    padding: 0 3rem;
+    padding: 0 1rem;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
 }
 
-// tablet
+// Responsive mở rộng dần từ mobile -> tablet -> desktop
+@media (min-width: 576px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+}
+
 @media (min-width: 768px) {
     .container {
         max-width: 720px;
     }
 }
 
-// laptop
 @media (min-width: 1024px) {
     .container {
         max-width: 960px;
     }
 }
 
-// laptop L
 @media (min-width: 1440px) {
     .container {
         max-width: 1320px;
@@ -59,10 +75,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-}
-
-.py-1 {
-    padding: 1rem 0;
 }
 
 .btn {
@@ -90,4 +102,13 @@ a {
 .btn-outline {
     background-color: transparent;
     color: $color-btn;
+}
+
+//
+.py-1 {
+    padding: 1rem 0;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
 }
