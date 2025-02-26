@@ -7,21 +7,11 @@ $color-text: rgb(0 0 0 / 55%);
 $color-text-2: #6c757d;
 $font-family: "Plus Jakarta Sans", serif;
 
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap");
-
-// Biến màu sắc
-$color-primary: rgb(30 48 243);
-$color-second: #e21e80;
-$color-btn: #212529;
-$color-text: rgba(0, 0, 0, 0.55);
-$color-text-2: #6c757d;
-$font-family: "Plus Jakarta Sans", serif;
-
 // Thiết lập mặc định
 * {
     font-family: $font-family;
     font-optical-sizing: auto;
-    font-weight: 500;
+    // font-weight: 500;
     font-style: normal;
     box-sizing: border-box;
     color: $color-text;
@@ -35,6 +25,10 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+svg {
+    vertical-align: middle;
 }
 
 // Base Container (Mobile First)
@@ -83,7 +77,6 @@ a {
     font-family: $font-family;
     font-size: 1.25rem;
     font-weight: 500;
-    line-height: 1.5;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -108,7 +101,32 @@ a {
 .py-1 {
     padding: 1rem 0;
 }
+.py-2 {
+    padding: 2rem 0;
+}
+.py-3 {
+    padding: 3rem 0;
+}
+
+.px-1 {
+    padding: 0 1rem;
+}
+.px-1 {
+    padding: 0 2rem;
+}
+
+.px-3 {
+    padding: 0 3rem;
+}
+
+.my-3 {
+    margin: 3rem 0;
+}
 
 .mb-1 {
     margin-bottom: 1rem;
+}
+
+.text-center {
+    text-align: center;
 }
